@@ -18,6 +18,18 @@ Dependencies
 
 None
 
+
+Installation
+------------
+Add the following to your `requirements.yml` file:
+```
+- name: acromedia.drush
+  src: https://github.com/AcroMedia/ansible-role-drush
+```
+Then run: 
+`ansible-galaxy install -r requirements.yml`
+
+
 Example Playbook
 ----------------
 
