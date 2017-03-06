@@ -1,0 +1,11 @@
+---
+# tasks file for acro.drush
+
+- name: Install drush from phar
+  get_url:
+    url: https://github.com/drush-ops/drush/releases/download/8.1.10/drush.phar
+    checksum: sha256:af355c7a5a804c4175a3dddcefb1c2a9aed29c1f66d1a26863757d5aa1c0922b
+    dest: /usr/local/bin/drush
+    group: root
+    owner: root
+    mode: 0755
