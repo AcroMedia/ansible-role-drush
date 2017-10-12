@@ -3,8 +3,8 @@
 
 - name: Install drush from phar
   get_url:
-    url: https://github.com/drush-ops/drush/releases/download/8.1.10/drush.phar
-    checksum: sha256:af355c7a5a804c4175a3dddcefb1c2a9aed29c1f66d1a26863757d5aa1c0922b
+    url: https://github.com/drush-ops/drush/releases/download/8.1.15/drush.phar
+    checksum: sha256:1a3befad338ac4287d8e8d48854b1ac4f826e8a0cdb4166772ff65507f2eca1d
     dest: /usr/local/bin/drush
     group: root
     owner: root
