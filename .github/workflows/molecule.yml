@@ -27,9 +27,9 @@ jobs:
     strategy:
       matrix:
         image:
-          - geerlingguy/docker-ubuntu2004-ansible:latest
-          - geerlingguy/docker-ubuntu1804-ansible:latest
-          - geerlingguy/docker-ubuntu1604-ansible:latest
+          - ubuntu2004
+          - ubuntu1804
+          - ubuntu1604
     steps:
       - name: checkout
         uses: actions/checkout@v2
@@ -40,3 +40,5 @@ jobs:
         with:
           image: "${{ matrix.image }}"
           options: parallel
+        env:
+          MOLECULE_DISTRO: "${{ matrix.image }}"
