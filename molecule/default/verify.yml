@@ -1,0 +1,9 @@
+---
+- name: Check drush is installed
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Confirm drush installation is correct.
+      shell: drush --version | grep '8.1.17'
+      changed_when: false
