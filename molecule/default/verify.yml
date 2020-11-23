@@ -7,10 +7,11 @@
     - name: Confirm drush installation is correct.
       shell: drush --version | grep '8.1.17'
       changed_when: false
-      
+
     - debug:
         var: "{{ item }}"
       with_items:
         - ansible_distribution
         - ansible_distribution_release
         - ansible_distribution_version
+
