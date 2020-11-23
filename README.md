@@ -1,6 +1,8 @@
 Drush
 =====
 
+![.github/workflows/molecule.yml](https://github.com/AcroMedia/ansible-role-drush/workflows/.github/workflows/molecule.yml/badge.svg)
+
 Install a more modern version of Drush than is normally available in stock yum/apt repositories.
 
 Requirements
