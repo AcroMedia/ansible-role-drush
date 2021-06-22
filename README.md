@@ -1,14 +1,17 @@
-Drush
-=====
+Drush (for Drupal 6/7)
+======================
 
 ![.github/workflows/molecule.yml](https://github.com/AcroMedia/ansible-role-drush/workflows/.github/workflows/molecule.yml/badge.svg)
 
 Install a more modern version of Drush than is normally available in stock yum/apt repositories.
 
+If you're using Drupal 8 or newer, you don't want this. You want Drush installed from composer instead.
+
 Requirements
 ------------
 
-Ansible 2.0
+- Ansible 2.0
+- Drupal 7 or older
 
 Role Variables
 --------------
